@@ -39,21 +39,68 @@
 
 /* ---------- main ---------- */
 
+#mainmargin {
+    margin: 0 100px 0 100px;
+}
+
 #blocsup {
     display: flex;
 }
+
+.widthimg {
+    width: 70%;
+}
+
+
 #ligne1 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0 0 0;
 }
+
+#ligne1 a {
+    width: 25%;
+}
+
 
 #ligne2 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+#ligne2 a {
+    width: 17%;
 }
 
 #ligne3 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0 0 0;
 }
 
+#ligne3 a {
+    width: 20%;
+}
+
+#quali12 {
+    display: flex;
+}
+
+#quali1 {
+    display: flex;
+}
+
+#quali2 {
+    display: flex;
+}
+
+.qualiimg {
+    width: 20%;
+}
 
 /* ---------- FOOTER ---------- */
 
