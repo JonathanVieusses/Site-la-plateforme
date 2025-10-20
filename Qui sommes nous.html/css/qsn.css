@@ -1,0 +1,187 @@
+/* ---------- header ----------*/
+
+#allheader {
+    display: flex; /* aligner le logo et le reste sur la même ligne */
+    align-items: center; /* centre vertical */
+    justify-content: flex-start; /* on commence en collant tout à gauche */
+    gap: 40px; /* espace entre le logo et le reste */
+    padding: 12px 0px 0px 0px; /* marges globales à l'intèrieur du bloc */
+}
+
+#logoheader {
+    display: flex;
+    width: 400px;
+    height: auto;
+
+}
+
+#textheader {
+    display: flex;
+    flex: 1; /* permet d'occuper tout l'espace restant */
+    align-items: center; /* centrage vertical */
+    justify-content; center; /* centrage horizontal du texte et lien */
+    gap: 30px; /* espace régulier entre chaque span */
+}
+
+#textheader span {
+    width: auto; /* adapte automatiquement le texte à l'espace disponible */
+}
+
+.lien {
+    text-decoration: none;
+    color: black;
+}
+
+.lien:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* ---------- main ---------- */
+
+#blocsup {
+    display: flex;
+}
+#ligne1 {
+    display: flex;
+}
+
+#ligne2 {
+    display: flex;
+}
+
+#ligne3 {
+    display: flex;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+
+#footerbc{
+    background-color: #2a2a2a;
+    padding: 65px 45px 50px 45px;
+}
+
+#c1c4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* ---- largeur des colonnes et optimisation de l'espace dedié à chacunes ---- */
+/* ---- voir tout en haut du css pour l'explication des 0 1 et des px ---- */
+
+#c1 { flex: 0 1 380px; /* colonne 1 un peu plus large (logo + boutons) */
+}
+#c2 { flex: 1 1 260px;
+ }
+#c3 { flex: 1 1 260px;
+}
+#c4 { flex: 1 1 260px;
+}
+
+/* ---- colonne 1 ---- */
+
+#c1 {
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    width: 320px; /* ajuste la largueur du logo */
+    height: auto; /* garde les proportions de l'image */
+    margin: 0 0 0 0;
+    filter: brightness(0) invert(1); /* brightness permet de rendre le logo noir et invert sert à inverser les couleurs, le noir devient donc blanc */
+}
+
+.white{
+    color: white;
+    font-size: 18px;
+    margin: 0 0 30px 10px;
+}
+
+#icon {
+    display: flex;
+    gap: 5px; /* defini l'espace entre les logos */
+    margin: 0 0 0 30px;
+}
+
+
+#icon img {
+    width: 35px;
+    height: auto;
+}
+
+.border1 {
+    display: block;  /* permet de definir la ligne comme un bloc */
+    width: 250px;  /* permet de definir la taille du bloc */
+    border: 1px solid #D3D3D3; /* taille de la bordure du bloc, contour et couleur du contour */
+    background-color: #D3D3D3;
+    color: black;
+    margin: 40px 0 16px 0; /* ajuste l'espace entre le premier lien et les logos, ainsi que l'espace entre le lien et celui du dessous */
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial; sans-serif
+}
+
+.none {
+    text-decoration: none;
+}
+
+.border2 {
+    display: block;
+    width: 250px;
+    border: 1px solid #DC143C;
+    background-color: #DC143C;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: arial; sans-serif
+}
+
+/* ---- colonne 2 ---- */
+
+#c2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- colonne 3 ---- */
+
+#c3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- colonne 4 ---- */
+
+#c4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    border: 2px solid white;
+    padding: 2px 30px;
+    text-decoration: none;
+}
+
+.logoapril {
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* ---------- mention sous le footer ---------- */
+
+#mention {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
