@@ -136,7 +136,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 /* ---- largeur des colonnes et optimisation de l'espace dedié à chacunes ---- */
@@ -211,26 +211,27 @@
     font-family: arial; sans-serif
 }
 
-/* ---- colonne 2 ---- */
+/* ---------- colonne 2 3 4 ---------- */
 
-#c2 {
+
+.column-footer {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    color: #808080;
+    font-size: 18px;
 }
 
-/* ---- colonne 3 ---- */
-
-#c3 {
-    display: flex;
-    flex-direction: column;
+.column-footer a {
+    color: #808080;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/* ---- colonne 4 ---- */
-
-#c4 {
-    display: flex;
-    flex-direction: column;
+.column-footer a:hover {
+    color: red
 }
+
 
 .contact {
     border: 2px solid white;
@@ -249,7 +250,7 @@
 
 #mention {
     background-color: black;
-    color: white;
+    color: #808080;
     font-size: 14px;
     padding: 10px;
 }
