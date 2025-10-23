@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+
+<!-- ---------- header ---------- -->
+
+<header>
+    <div id="allheader">
+        <img id="logoheader" src="./images/logo-laplateforme-2024.png" alt="logo de la plateforme">
+        <div id="textheader">
+            <a class="lien" href="https://laplateforme.io/qui-sommes-nous/" target=_blank;>Qui somme-nous ?</a>
+            <span>Extrascolaire</span>
+            <span>Formations initales / alternance</span>
+            <span>Formations continues</span>
+            <span>Atelier & Labs</span>
+        </div>
+    </div>
+</header>
+
+<!-- ---------- main ---------- -->
+<main>
+<div id="bluepart">
+    <div id="blocleft">
+    <div>
+        <p>La grande école du numérique pour tous</p>
+        <p>Besoin d’un renseignement sur nos cursus, notre accompagnement entreprises, nos projets et actions ? Contactez-nous.</p>
+    </div>
+
+    <div id="widthimg">
+        <img src="images/HP_visual_light.jpg">
+    </div>
+    </div>
+
+
+<div id="form">
+        <h1 class="center">La Plateforme / Contact</h1>
+
+        <p class="padding">« * » indique les champs nécessaires</p>
+
+        <form action="" method="post">
+
+    <div id="line1">
+        <div>
+            <label for="select"></label>
+                <select name="civilité" id="select" required>
+                    <option value="">Civilité*</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mme.">Mme.</option>
+                    <option value="Mx.">Mx.</option>
+                </select>
+        </div>
+
+        <div>
+            <label for="prenom"></label>
+            <input type="text" id="prenom" placeholder="Prénom*" required>
+        </div>
+
+        <div>
+            <label for="nom"></label>
+            <input type="text" id="nom" placeholder="Nom*" required>
+        </div>
+    </div>
+
+    <div id="line2">
+        <div>
+            <label for="mail"></label>
+            <input type="email" id="mail" placeholder="E-mail*" required>
+        </div>
+
+        <div>
+            <label for="tel"></label>
+            <input type="number" id="tel" placeholder="Téléphone Mobile*" required>
+        </div>
+    </div>
+
+    <div id="line3">
+        <label for="choose"></label>
+            <select name="motif de contact" id="choose" required>
+                <option value="">Sélectionner un motif de contact*</option>
+            </select>
+    </div>
+
+    <div id="resize">
+        <label for="textarea"></label>
+        <textarea id="textarea" name="text" placeholder="message*"></textarea>
+    </div>
+
+    <div class="padding">
+        <label><input type="checkbox" name="informations" value="1">J'accepte de recevoir des informations de la part de La Plateforme</label>
+    </div>
+
+    <p class="padding">Selon l'article L.223-2 du code de la consommation, il est rappelé que le consommateur peut user de son droit à s'inscrire sur la liste d'opposition au démarchage téléphonique bloctel : bloctel.gouv.fr</p>
+
+    <div>
+        <button id=button type="submit">Envoyer</button>
+    </div>
+
+</form>
+
+</div>
+</div>
+</main>
+</body>
+</html>
